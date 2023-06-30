@@ -21,9 +21,9 @@
     date: new Date(),
     backgroundColor: getRandomColor()
     })
-
+ 
     showModal.value = false
-    newNote.value = ""
+    newNote.value =  ""
     errorMessage.value = ""
   }
 
@@ -156,5 +156,11 @@
 
    .modal p {
     color: red;
+   }
+
+   @media (max-width: 740px) {
+    h1{
+      font-size: 20px;
+    }
    }
 </style>
