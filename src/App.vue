@@ -31,6 +31,7 @@
 
 
 <template>
+
   <main>
     <div v-if="showModal" class="overlay">
       <div class="modal">
@@ -60,14 +61,17 @@
 
     </div>
   </main>
+
 </template>
 
 
 <style scoped>
+
    main {
     height: 100vh;
     width: 100vw;
    }
+
    .container{
     max-width: 1000px;
     padding: 10px;
@@ -83,7 +87,7 @@
    h1 {
     font-weight: bold;
     margin-bottom: 25px;
-    font-size: 50px;
+    font-size: 20px;
    }
 
    header button {
@@ -96,10 +100,11 @@
     border-radius: 100%;
     color: white;
     font-size: 20px;
+    transition: all .5s ease;
    }
-
    .card {
-    width: 225px;
+
+    max-width: 225px;
     height: 225px;
     color: rgb(21, 20, 44);
     padding: 10px;
@@ -110,6 +115,8 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
    }
    .date {
     font-size: 12.5px;
@@ -163,4 +170,5 @@
       font-size: 20px;
     }
    }
+
 </style>
